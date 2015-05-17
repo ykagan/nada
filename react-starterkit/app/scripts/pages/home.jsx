@@ -2,6 +2,7 @@ import React from 'react';
 import ItemList from '../components/itemList.jsx';
 import ItemStore from '../stores/itemStore';
 import ItemActions from '../actions/itemActions';
+import { RouteHandler } from 'react-router';
 
 class Home extends React.Component {
   
@@ -32,6 +33,7 @@ class Home extends React.Component {
       <div>
         <h1>Home Area</h1>
         <ItemList { ...this.state } />
+        <RouteHandler />
       </div>
     );
   }
